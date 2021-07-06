@@ -24,13 +24,14 @@ div.gallery-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 75%;
 }
 
 div.gallery {
   margin: 5px;
   float: left;
   width: 250px;
-  height: 100%;
+  
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
