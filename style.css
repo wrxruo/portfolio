@@ -44,7 +44,8 @@ body {
 
 .infobody {
   font-size: 17px;
-  line-height: 22px;
+  line-height: 25px;
+  margin-top: 30px;
 }
 
 a:hover, a:visited, a:link, a:active {
