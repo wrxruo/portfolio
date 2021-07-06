@@ -2,6 +2,32 @@ body {
   background-color: #E8E5DE;
 }
 
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: letter-spacing 1s;
+}
+
+.topnav a.active {
+  font-weight: bold;
+}
+
+.topnav a:hover{
+  letter-spacing: 7px;
+}
+
+.topnav-right {
+  float: right;
+}
+ /**************** COLORS ****************/
 .color-main {
   color: #54524c;
 }
@@ -14,10 +40,28 @@ body {
   color: #54524c;
   font-weight: bold;
 }
+/**************** COLORS END ****************/
+
+.infobody {
+  font-size: 17px;
+  line-height: 22px;
+}
 
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
   color: inherit;
+}
+
+div.column {
+  width: 40%;
+  padding-top: 50px;
+  margin: 0 auto;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 div.gallery-container {
@@ -32,15 +76,11 @@ div.gallery {
   float: left;
   width: 250px;
   
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
-}
-
-div.gallery:hover {
-
 }
 
 div.gallery img {
@@ -54,12 +94,11 @@ div.desc {
   font-size: 20px;
   font-family: Georgia;
   letter-spacing: 1px;
-  transition: letter-spacing 1s, text-transform 1s;
+  transition: letter-spacing 1s;
 }
 
 div.desc:hover {
   letter-spacing: 7px;
-  text-transform: bold;
 }
 
 div.species {
