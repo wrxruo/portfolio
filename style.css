@@ -1,32 +1,70 @@
 body {
   background-color: #F2EDE9;
+  background-image: url("https://i.imgur.com/8Iu3h8X.png");
+  background-attachment: fixed;
 }
 
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
+.navbar a {
+  padding-left: 15%;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 1px;
   transition: letter-spacing 1s;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
-.topnav a.active {
-  font-weight: bold;
-}
-
-.topnav a:hover{
+.navbar a:hover{
   letter-spacing: 7px;
 }
 
-.topnav-right {
-  float: right;
+.fixed-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  transition: all 3s;
 }
+
+.whitespace {
+  position: fixed;
+  bottom: 0;
+  width: 75%;
+  height: 100%;
+  z-index: -1;
+  background: white;
+  transition: all 1s;
+}
+
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+
+.show {
+  opacity: 1;
+  left: 0;
+}
+
+.hide-right {
+  opacity: 0;
+  right: -100%;
+}
+
+.show-right {
+  opacity: 1;
+  right: 0;
+}
+
+/**************** NAVBAR STUFF ENDS ****************/
+
+h1 {
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
  /**************** COLORS ****************/
 .color-main {
   color: #54524c;
@@ -42,10 +80,16 @@ body {
 }
 /**************** COLORS END ****************/
 
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+
 .infobody {
-  font-size: 17px;
-  line-height: 25px;
-  margin-top: 30px;
+}
+
+.i {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -53,7 +97,14 @@ a:hover, a:visited, a:link, a:active {
   color: inherit;
 }
 
+div:hover + div.speciesfact {
+  display: block;
+  opacity: 1;
+}
+
 div.column {
+  font-size: 17px;
+  line-height: 25px;
   width: 40%;
   padding-top: 50px;
   margin: 0 auto;
@@ -67,16 +118,15 @@ div.column {
 
 div.gallery-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 75%;
+  height: 100%;
 }
 
 div.gallery {
+  padding-top: 200px;
   margin: 5px;
   float: left;
   width: 250px;
-  
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -102,18 +152,17 @@ div.desc:hover {
   letter-spacing: 7px;
 }
 
-div.speciesfact {
-  text-align: center;
-  display: none;
-}
-
-a:hover + div.speciesfact {
-  display: block;
-}
-
 div.species {
   text-align: center;
   font-family: Times New Roman;
+}
+
+div.speciesfact {
+  padding-top: 10px;
+  display: none;
+  text-align: center;
+  font-family: Times New Roman;
+  transition: all 2s linear;
 }
 
 @keyframes fadein {

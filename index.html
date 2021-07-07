@@ -2,34 +2,60 @@
 	<head>
 		<title>coco wang</title>
 	</head>
+	
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Butterfly_icon_%28Noun_Project%29.svg/1200px-Butterfly_icon_%28Noun_Project%29.svg.png">
+	<div id="navbarID" class="fixed-navbar hide">
+		<div class="navbar color-accent"><a href="#topID">home</a></div>
+		<div class="navbar color-main"><a href="#aboutID">about</a></div>
+		<div class="navbar color-main"><a href="#contactID">contact</a></div>
+	</div>
+	<div id="whitespaceID" class="whitespace hide"></div>
 	<body>
-		<div class="gallery-container">
+		<div id="topID" class="gallery-container">
 			<div class="gallery">
 				<img src="https://i.imgur.com/1E78Yzr.png" alt="Tiger Swallotail" width="700" height="500">
 				<div class="desc color-accent">coco wang</div>
 				<div class="species color-light"><i>Nymphalis vaualbum</i></div>
+				<div class="speciesfact color-light">The compton tortoiseshell</div>
 			</div>
 
 			<div class="gallery">
 				<img src="https://i.imgur.com/9Aq4w9e.png" alt="Compton Tortoiseshell" width="700" height="500">
-				<a href="about.html">
+				<a href="#aboutID">
 					<div class="desc color-main">about</div>
 				</a>
 				<div class="species color-light"><i>Papilio glaucus</i></div>
+				<div class="speciesfact color-light">The eastern tiger swallowtail</div>
 			</div>
 
 			<div class="gallery">
 				<img src="https://i.imgur.com/OZTituo.png" alt="Red-Spotted Purple" width="700" height="500">
-				<a href="contact.html">
+				<a href="#contactID">
 					<div class="desc color-main">contact</div>
 				</a>
 				<div class="species color-light"><i>Limenitis arthemis</i></div>
-				
+				<div class="speciesfact color-light">The red-spotted purple</div>
 			</div>
 		</div>
 		<!--End gallery  -->
-
+		<div id="aboutID" class="infobody column">
+			<h1 class="color-accent">about me</h1>
+			<p class="color-main i">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="color-main i">scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test<br><br><br>scroll test</p>
+			<p class="color-main i">This is where I would list my accomplishments... if I had any!!!!!</p>
+			<p class="color-main i">For now I am partial to listing my insecurities instead.</p>
+			<p class="color-main i">...</p>
+			<p class="color-main i">On second thought, never mind!</p>
+			<p class="color-main i">Hey the scroll things work!</p>
+			<hr class="solid">
+		</div>
+		<div id="contactID" class="contact column">
+			<h1 class="color-accent">contact me</h1>
+			<p class="color-main i">leave me a message so I can look at it, tell myself I'll reply in a bit, then forget about it forever. <br>I'm sorry I'm like this</p>
+		</div>
+		<footer>
+		</footer>
+		<script src="javascript.js"></script>
 	</body>
 </html>
